@@ -7,7 +7,7 @@
         * { box-sizing: border-box; }
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-            max-width: 1200px; 
+            max-width: 1400px; 
             margin: 0 auto; 
             padding: 20px; 
             background: #fff;
@@ -17,7 +17,7 @@
         .subtitle { color: #656d76; margin-bottom: 32px; }
         .stats { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
             gap: 16px; 
             margin: 24px 0; 
         }
@@ -38,18 +38,6 @@
             font-size: 14px; 
             color: #656d76; 
         }
-        .status-badge {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-        }
-        .status-scanning {
-            background: #fff3cd;
-            color: #856404;
-            border: 1px solid #ffeaa7;
-        }
         table { 
             width: 100%; 
             border-collapse: collapse; 
@@ -57,41 +45,34 @@
             border: 1px solid #d1d9e0;
             border-radius: 8px;
             overflow: hidden;
+            font-size: 13px;
         }
         th, td { 
-            padding: 12px 16px; 
+            padding: 8px 12px; 
             text-align: left; 
             border-bottom: 1px solid #d1d9e0; 
         }
         th { 
             background: #f6f8fa; 
             font-weight: 600; 
-            font-size: 14px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        td { font-size: 14px; }
+        td { font-size: 13px; }
         .status-open { color: #d1242f; font-weight: 500; }
         .status-closed { color: #1a7f37; font-weight: 500; }
         a { color: #0969da; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .scanning-notice {
-            background: #dbeafe;
-            border: 1px solid #93c5fd;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 24px 0;
-            text-align: center;
-            color: #1e40af;
-        }
+        .key-type-openai { background: #0969da; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+        .key-type-anthropic { background: #6f42c1; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+        .key-type-groq { background: #28a745; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; }
+        .repo-name { max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     </style>
 </head>
 <body>
     <h1>Key Guardian Security Dashboard</h1>
     <p class="subtitle">Automated API key leak detection and disclosure tracking by <a href="https://crap.dev">Zak Cole</a></p>
-    
-    <div class="scanning-notice">
-        <strong>⚡ Live Scan in Progress</strong><br>
-        Currently scanning for additional API key leaks. Dashboard will update with new findings.
-    </div>
     
     <div class="stats">
         <div class="stat">
@@ -112,7 +93,7 @@
         </div>
     </div>
 
-    <h2>Active Security Disclosures</h2>
+    <h2>Active Security Disclosures (28 Total)</h2>
     <table>
         <thead>
             <tr>
@@ -121,48 +102,50 @@
                 <th>Key Type</th>
                 <th>File</th>
                 <th>Status</th>
-                <th>Created</th>
+                <th>Date</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><a href="https://github.com/jr440/ADHD-Short-Memory">jr440/ADHD-Short-Memory</a></td>
-                <td><a href="https://github.com/jr440/ADHD-Short-Memory/issues/3">#3</a></td>
-                <td>OpenAI</td>
-                <td>.env</td>
-                <td class="status-open">Open</td>
-                <td>2026-02-03</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/VivekDagur/AquaMind-Water-Management">VivekDagur/AquaMind-Water-Management</a></td>
-                <td><a href="https://github.com/VivekDagur/AquaMind-Water-Management/issues/1">#1</a></td>
-                <td>OpenAI</td>
-                <td>backend/.env.env</td>
-                <td class="status-open">Open</td>
-                <td>2026-02-03</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/hamza12-12/bot-landing-page">hamza12-12/bot-landing-page</a></td>
-                <td><a href="https://github.com/hamza12-12/bot-landing-page/issues/2">#2</a></td>
-                <td>OpenAI</td>
-                <td>bot.py</td>
-                <td class="status-open">Open</td>
-                <td>2026-02-03</td>
-            </tr>
-            <tr>
-                <td><a href="https://github.com/ganeshkiran987/Simple_Chatbot_Project">ganeshkiran987/Simple_Chatbot_Project</a></td>
-                <td><a href="https://github.com/ganeshkiran987/Simple_Chatbot_Project/issues/1">#1</a></td>
-                <td>OpenAI</td>
-                <td>.env</td>
-                <td class="status-open">Open</td>
-                <td>2026-02-03</td>
-            </tr>
+            <tr><td class="repo-name"><a href="https://github.com/ganeshkiran987/Simple_Chatbot_Project">ganeshkiran987/Simple_Chatbot_Project</a></td><td><a href="https://github.com/ganeshkiran987/Simple_Chatbot_Project/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>check.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/anamika222/Note_sharing_website">anamika222/Note_sharing_website</a></td><td><a href="https://github.com/anamika222/Note_sharing_website/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>community.js</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/raymondldai/music-recommender">raymondldai/music-recommender</a></td><td><a href="https://github.com/raymondldai/music-recommender/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>server/gptCall.js</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/Jonnyamaloiras/chatgpt-image-chat">Jonnyamaloiras/chatgpt-image-chat</a></td><td><a href="https://github.com/Jonnyamaloiras/chatgpt-image-chat/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>widget.js</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/mrahmdi/Ggggg">mrahmdi/Ggggg</a></td><td><a href="https://github.com/mrahmdi/Ggggg/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>app.js</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/Estomihi100103/Local-AI-With-Persona">Estomihi100103/Local-AI-With-Persona</a></td><td><a href="https://github.com/Estomihi100103/Local-AI-With-Persona/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>.ENV</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/voks645/ia-autosite">voks645/ia-autosite</a></td><td><a href="https://github.com/voks645/ia-autosite/issues/3">#3</a></td><td><span class="key-type-openai">OpenAI</span></td><td>key.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/Sums-shadow/wamessage">Sums-shadow/wamessage</a></td><td><a href="https://github.com/Sums-shadow/wamessage/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/sandeep82945/Idea-Generation">sandeep82945/Idea-Generation</a></td><td><a href="https://github.com/sandeep82945/Idea-Generation/issues/1">#1</a></td><td><span class="key-type-anthropic">Anthropic</span></td><td>code/claude3.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/nitinprajwal/Argus">nitinprajwal/Argus</a></td><td><a href="https://github.com/nitinprajwal/Argus/issues/1">#1</a></td><td><span class="key-type-anthropic">Anthropic</span></td><td>assist.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/gstuleni/thing">gstuleni/thing</a></td><td><a href="https://github.com/gstuleni/thing/issues/1">#1</a></td><td><span class="key-type-anthropic">Anthropic</span></td><td>Autofill.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/A-L-Solutions/ai-workflow-builder">A-L-Solutions/ai-workflow-builder</a></td><td><a href="https://github.com/A-L-Solutions/ai-workflow-builder/issues/1">#1</a></td><td><span class="key-type-anthropic">Anthropic</span></td><td>envs/aws.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/lucasdmc/atendeai-lify-admin">lucasdmc/atendeai-lify-admin</a></td><td><a href="https://github.com/lucasdmc/atendeai-lify-admin/issues/2">#2</a></td><td><span class="key-type-anthropic">Anthropic</span></td><td>ai-config-production.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/nsalapete/Serica">nsalapete/Serica</a></td><td><a href="https://github.com/nsalapete/Serica/issues/1">#1</a></td><td><span class="key-type-anthropic">Anthropic</span></td><td>env_files/api.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/Sarfaraz021/RAG-Vector-Echr">Sarfaraz021/RAG-Vector-Echr</a></td><td><a href="https://github.com/Sarfaraz021/RAG-Vector-Echr/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>src/backend/var.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/Sarfaraz021/RAG-Vector-Echr">Sarfaraz021/RAG-Vector-Echr</a></td><td><a href="https://github.com/Sarfaraz021/RAG-Vector-Echr/issues/2">#2</a></td><td><span class="key-type-anthropic">Anthropic</span></td><td>src/backend/var.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/arham-anwar/GraphRAG-Local-Implementation-With-Neo4j-Integeration">arham-anwar/GraphRAG-Local-Implementation...</a></td><td><a href="https://github.com/arham-anwar/GraphRAG-Local-Implementation-With-Neo4j-Integeration/issues/1">#1</a></td><td><span class="key-type-groq">Groq</span></td><td>.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/Garvanand/VITAL-AI2">Garvanand/VITAL-AI2</a></td><td><a href="https://github.com/Garvanand/VITAL-AI2/issues/1">#1</a></td><td><span class="key-type-groq">Groq</span></td><td>.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/Elton-Asantos/BotInteractAI">Elton-Asantos/BotInteractAI</a></td><td><a href="https://github.com/Elton-Asantos/BotInteractAI/issues/1">#1</a></td><td><span class="key-type-groq">Groq</span></td><td>.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/UdaraChamidu/Medical-Chatbot">UdaraChamidu/Medical-Chatbot</a></td><td><a href="https://github.com/UdaraChamidu/Medical-Chatbot/issues/1">#1</a></td><td><span class="key-type-groq">Groq</span></td><td>.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/sandeepnadesan/Chatbot_DoJ">sandeepnadesan/Chatbot_DoJ</a></td><td><a href="https://github.com/sandeepnadesan/Chatbot_DoJ/issues/2">#2</a></td><td><span class="key-type-groq">Groq</span></td><td>.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/AvinashReddyKatha/Chatbuddies">AvinashReddyKatha/Chatbuddies</a></td><td><a href="https://github.com/AvinashReddyKatha/Chatbuddies/issues/2">#2</a></td><td><span class="key-type-openai">OpenAI</span></td><td>Main.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/thesanju/GPT_voice_assistant">thesanju/GPT_voice_assistant</a></td><td><a href="https://github.com/thesanju/GPT_voice_assistant/issues/2">#2</a></td><td><span class="key-type-openai">OpenAI</span></td><td>v2.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/ShubhamKathane17/SyllabusSage">ShubhamKathane17/SyllabusSage</a></td><td><a href="https://github.com/ShubhamKathane17/SyllabusSage/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>ai.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/kidskoding/Tom">kidskoding/Tom</a></td><td><a href="https://github.com/kidskoding/Tom/issues/5">#5</a></td><td><span class="key-type-openai">OpenAI</span></td><td>tom.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/jr440/ADHD-Short-Memory">jr440/ADHD-Short-Memory</a></td><td><a href="https://github.com/jr440/ADHD-Short-Memory/issues/3">#3</a></td><td><span class="key-type-openai">OpenAI</span></td><td>.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/VivekDagur/AquaMind-Water-Management">VivekDagur/AquaMind-Water-Management</a></td><td><a href="https://github.com/VivekDagur/AquaMind-Water-Management/issues/1">#1</a></td><td><span class="key-type-openai">OpenAI</span></td><td>backend/.env.env</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
+            <tr><td class="repo-name"><a href="https://github.com/hamza12-12/bot-landing-page">hamza12-12/bot-landing-page</a></td><td><a href="https://github.com/hamza12-12/bot-landing-page/issues/2">#2</a></td><td><span class="key-type-openai">OpenAI</span></td><td>bot.py</td><td class="status-open">Open</td><td>2026-02-03</td></tr>
         </tbody>
     </table>
     
+    <h3>Key Statistics</h3>
+    <ul>
+        <li><strong>OpenAI Keys:</strong> 18 disclosures (64%)</li>
+        <li><strong>Anthropic Keys:</strong> 6 disclosures (21%)</li>
+        <li><strong>Groq Keys:</strong> 5 disclosures (18%)</li>
+    </ul>
+    
     <p style="color: #656d76; font-size: 14px; text-align: center; margin-top: 40px;">
-        Last updated: 2026-02-03 17:32 CST • Powered by <a href="https://numbergroup.xyz">Number Group</a>
+        Last updated: 2026-02-03 17:44 CST • Powered by <a href="https://numbergroup.xyz">Number Group</a>
     </p>
 </body>
 </html>
-<!-- Build trigger Tue Feb  3 17:34:54 CST 2026 -->
