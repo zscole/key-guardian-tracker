@@ -1,20 +1,20 @@
-# 🛡️ Key Guardian Security Tracker
+#  Key Guardian Security Tracker
 
 **Automated API key leak detection and responsible disclosure**
 
 Last updated: 2026-02-03 23:05 UTC
 
-## 📊 Dashboard
+##  Dashboard
 
 | Metric | Count |
 |--------|-------|
-| 🏢 Repositories Contacted | **0** |
-| 📝 Issues Created | **0** |
-| 🔧 PRs Submitted | **0** |
-| ✅ Issues Fixed (Closed) | **0** |
-| 🔀 PRs Merged | **0** |
-| 💬 Responses Received | **0** |
-| 🔑 Keys Rotated (confirmed) | **0** |
+|  Repositories Contacted | **0** |
+|  Issues Created | **0** |
+|  PRs Submitted | **0** |
+|  Issues Fixed (Closed) | **0** |
+|  PRs Merged | **0** |
+|  Responses Received | **0** |
+|  Keys Rotated (confirmed) | **0** |
 
 ### Response Metrics
 
@@ -31,7 +31,7 @@ Last updated: 2026-02-03 23:05 UTC
 | Month | Repos Contacted |
 |-------|-----------------|
 
-## 🎯 Mission
+##  Mission
 
 Key Guardian helps secure the open-source ecosystem by:
 
@@ -40,7 +40,7 @@ Key Guardian helps secure the open-source ecosystem by:
 3. **Fixing** problems by submitting PRs with secure alternatives
 4. **Tracking** impact and helping developers learn
 
-## 🤝 Responsible Disclosure
+##  Responsible Disclosure
 
 We follow responsible disclosure practices:
 
@@ -49,20 +49,20 @@ We follow responsible disclosure practices:
 - We provide actionable fixes, not just warnings
 - We help, not shame
 
-## 📈 Impact
+##  Impact
 
 Every leaked key we find and help fix:
 - Prevents potential financial damage (API abuse)
 - Protects user data
 - Educates developers on security best practices
 
-## 📚 Resources
+##  Resources
 
 - [How to Store API Keys Safely](https://12factor.net/config)
 - [Using Environment Variables](https://www.twilio.com/blog/how-to-set-environment-variables)
 - [Git Secrets Prevention](https://github.com/awslabs/git-secrets)
 
-## ✍️ About
+##  About
 
 Built by [Zak Cole](https://crap.dev) ([@0xzak](https://x.com/0xzak))
 
@@ -70,4 +70,4 @@ Built by [Zak Cole](https://crap.dev) ([@0xzak](https://x.com/0xzak))
 
 ---
 
-*🔒 Securing the web, one leaked key at a time.*
+* Securing the web, one leaked key at a time.*
