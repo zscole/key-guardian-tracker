@@ -2,14 +2,14 @@
 
 **Automated API key leak detection and responsible disclosure**
 
-Last updated: 2026-02-03 23:09 UTC
+Last updated: 2026-02-03 23:38 UTC
 
 ##  Dashboard
 
 | Metric | Count |
 |--------|-------|
-|  Repositories Contacted | **0** |
-|  Issues Created | **0** |
+|  Repositories Contacted | **11** |
+|  Issues Created | **11** |
 |  PRs Submitted | **0** |
 |  Issues Fixed (Closed) | **0** |
 |  PRs Merged | **0** |
@@ -18,13 +18,14 @@ Last updated: 2026-02-03 23:09 UTC
 
 ### Response Metrics
 
-- **Response Rate:** 0%
-- **Fix Rate:** 0%
+- **Response Rate:** 0.0%
+- **Fix Rate:** 0.0%
 
 ### By Key Type
 
 | Provider | Leaks Found |
 |----------|-------------|
+| OpenAI | 11 |
 
 ### Monthly Activity
 
