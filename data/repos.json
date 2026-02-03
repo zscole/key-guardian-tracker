@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "repo": "ganeshkiran987/Simple_Chatbot_Project",
+    "issue_number": 1,
+    "issue_url": "https://github.com/ganeshkiran987/Simple_Chatbot_Project/issues/1",
+    "key_type": "OpenAI",
+    "file_path": ".env",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "jr440/ADHD-Short-Memory",
+    "issue_number": 3,
+    "issue_url": "https://github.com/jr440/ADHD-Short-Memory/issues/3",
+    "key_type": "OpenAI",
+    "file_path": ".env",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "VivekDagur/AquaMind-Water-Management",
+    "issue_number": 1,
+    "issue_url": "https://github.com/VivekDagur/AquaMind-Water-Management/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "backend/.env.env",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "hamza12-12/bot-landing-page",
+    "issue_number": 2,
+    "issue_url": "https://github.com/hamza12-12/bot-landing-page/issues/2",
+    "key_type": "OpenAI",
+    "file_path": "bot.py",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "anamika222/Note_sharing_website",
+    "issue_number": 1,
+    "issue_url": "https://github.com/anamika222/Note_sharing_website/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "unknown",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "raymondldai/music-recommender",
+    "issue_number": 1,
+    "issue_url": "https://github.com/raymondldai/music-recommender/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "unknown",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "Jonnyamaloiras/chatgpt-image-chat",
+    "issue_number": 1,
+    "issue_url": "https://github.com/Jonnyamaloiras/chatgpt-image-chat/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "unknown",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "mrahmdi/Ggggg",
+    "issue_number": 1,
+    "issue_url": "https://github.com/mrahmdi/Ggggg/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "unknown",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "Estomihi100103/Local-AI-With-Persona",
+    "issue_number": 1,
+    "issue_url": "https://github.com/Estomihi100103/Local-AI-With-Persona/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "unknown",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "voks645/ia-autosite",
+    "issue_number": 1,
+    "issue_url": "https://github.com/voks645/ia-autosite/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "unknown",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  },
+  {
+    "repo": "Sums-shadow/wamessage",
+    "issue_number": 1,
+    "issue_url": "https://github.com/Sums-shadow/wamessage/issues/1",
+    "key_type": "OpenAI",
+    "file_path": "unknown",
+    "created_date": "2026-02-03",
+    "status": "open",
+    "has_response": false,
+    "pr_url": null,
+    "pr_status": null
+  }
+]
