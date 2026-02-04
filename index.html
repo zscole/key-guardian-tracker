@@ -149,3 +149,25 @@
     </p>
 </body>
 </html>
+
+<!-- Add responses section before closing body -->
+<script>
+document.body.innerHTML = document.body.innerHTML.replace('</body>', `
+<h2 style="margin-top:32px">Responses Received</h2>
+<table>
+<tr><th>Repository</th><th>Response</th><th>Status</th><th>Date</th></tr>
+<tr>
+<td><a href="https://github.com/thesanju/GPT_voice_assistant/issues/2">thesanju/GPT_voice_assistant</a></td>
+<td>"Key was revoked long back, thanks for reporting"</td>
+<td class="status-closed">Closed</td>
+<td>2026-02-04</td>
+</tr>
+<tr>
+<td><a href="https://github.com/PhucHuwu/TuyenSinhGPT/issues/1">PhucHuwu/TuyenSinhGPT</a></td>
+<td>"Key just revoked"</td>
+<td class="status-open">Open</td>
+<td>2026-02-04</td>
+</tr>
+</table>
+</body>`);
+</script>
