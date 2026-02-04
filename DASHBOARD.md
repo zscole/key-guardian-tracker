@@ -1,36 +1,37 @@
 # Key Guardian Security Dashboard
 
-**Total Repos Contacted:** 11  
-**Issues Opened:** 11  
+**Total Repos Contacted:** 36  
+**Issues Opened:** 28  
 **PRs Created:** 0  
-**Responses Received:** 0  
+**Responses Received:** 2  
 
-## Active Disclosures
+## Response Summary
 
-| Repo | Issue | Key Type | File | Status | Created |
-|------|-------|----------|------|--------|---------|
-| [jr440/ADHD-Short-Memory](https://github.com/jr440/ADHD-Short-Memory) | [#3](https://github.com/jr440/ADHD-Short-Memory/issues/3) | OpenAI | .env | Open | 2026-02-03 |
-| [VivekDagur/AquaMind-Water-Management](https://github.com/VivekDagur/AquaMind-Water-Management) | [#1](https://github.com/VivekDagur/AquaMind-Water-Management/issues/1) | OpenAI | backend/.env.env | Open | 2026-02-03 |
-| [hamza12-12/bot-landing-page](https://github.com/hamza12-12/bot-landing-page) | [#2](https://github.com/hamza12-12/bot-landing-page/issues/2) | OpenAI | bot.py | Open | 2026-02-03 |
-| [ganeshkiran987/Simple_Chatbot_Project](https://github.com/ganeshkiran987/Simple_Chatbot_Project) | [#1](https://github.com/ganeshkiran987/Simple_Chatbot_Project/issues/1) | OpenAI | .env | Open | 2026-02-03 |
-| [anamika222/Note_sharing_website](https://github.com/anamika222/Note_sharing_website) | [#1](https://github.com/anamika222/Note_sharing_website/issues/1) | OpenAI | unknown | Open | 2026-02-03 |
-| [raymondldai/music-recommender](https://github.com/raymondldai/music-recommender) | [#1](https://github.com/raymondldai/music-recommender/issues/1) | OpenAI | unknown | Open | 2026-02-03 |
-| [Jonnyamaloiras/chatgpt-image-chat](https://github.com/Jonnyamaloiras/chatgpt-image-chat) | [#1](https://github.com/Jonnyamaloiras/chatgpt-image-chat/issues/1) | OpenAI | unknown | Open | 2026-02-03 |
-| [mrahmdi/Ggggg](https://github.com/mrahmdi/Ggggg) | [#1](https://github.com/mrahmdi/Ggggg/issues/1) | OpenAI | unknown | Open | 2026-02-03 |
-| [Estomihi100103/Local-AI-With-Persona](https://github.com/Estomihi100103/Local-AI-With-Persona) | [#1](https://github.com/Estomihi100103/Local-AI-With-Persona/issues/1) | OpenAI | unknown | Open | 2026-02-03 |
-| [voks645/ia-autosite](https://github.com/voks645/ia-autosite) | [#3](https://github.com/voks645/ia-autosite/issues/3) | OpenAI | unknown | Open | 2026-02-03 |
-| [Sums-shadow/wamessage](https://github.com/Sums-shadow/wamessage) | [#1](https://github.com/Sums-shadow/wamessage/issues/1) | OpenAI | unknown | Open | 2026-02-03 |
+| Repo | Issue | Response | Status |
+|------|-------|----------|--------|
+| [thesanju/GPT_voice_assistant](https://github.com/thesanju/GPT_voice_assistant) | [#2](https://github.com/thesanju/GPT_voice_assistant/issues/2) | "Key was revoked long back, thanks for reporting" | Closed |
+| [PhucHuwu/TuyenSinhGPT](https://github.com/PhucHuwu/TuyenSinhGPT) | [#1](https://github.com/PhucHuwu/TuyenSinhGPT/issues/1) | "Key just revoked" | Open |
 
 ## Statistics
 
-**Response Rate:** 0% (0/11)  
-**Fix Rate:** 0% (0/11)  
-**Key Types Found:** 100% OpenAI  
+- **Response Rate:** 5.5% (2/36)
+- **Keys Confirmed Revoked:** 2
+- **Key Types Found:** OpenAI, Anthropic, Groq
+- **Scans Completed:** 28+
+- **Total Search Hits Analyzed:** ~14,000+
 
 ## Latest Activity
 
-**2026-02-03:** 11 API key leaks discovered and disclosed across personal projects
+**2026-02-04:** 
+- 2 responses received confirming key revocation
+- Scan filtering working well - catching fake/example keys
+- 0 new issues today (all candidates were placeholder patterns)
+
+**2026-02-03:**
+- Initial batch of 28 disclosures sent
+- Automated scanning pipeline operational
 
 ---
 
-Updated automatically by [Key Guardian](https://github.com/numbergroup/llm-key-leaks)
+Updated: 2026-02-04 09:49 CST  
+Bot: [Key Guardian](https://github.com/zscole/llm-key-leaks)
